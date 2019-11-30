@@ -1,4 +1,5 @@
 // +build ignore
+
 package main
 
 import (
@@ -17,7 +18,7 @@ import (
 
 const (
 	// Time allowed to write the file to the client.
-	writeWait = 10 * time.Second
+	writeWait = 1 * time.Second
 
 	// Time allowed to read the next pong message from the client.
 	pongWait = 60 * time.Second
@@ -26,7 +27,7 @@ const (
 	pingPeriod = (pongWait * 9) / 10
 
 	// Poll file for changes with this period.
-	filePeriod = 10 * time.Second
+	filePeriod = 1 * time.Second
 )
 
 var (
